@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+.git
+.gitattributes
+*.egg-info
+.env
+import requests.py

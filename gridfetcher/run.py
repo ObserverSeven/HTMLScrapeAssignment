@@ -19,8 +19,12 @@ def main():
 
     args = parser.parse_args()
 
-    grid = fetch_grid(args.url)
-    print_grid(grid)
+    try:
+        grid = fetch_grid(args.url)
+        print_grid(grid)
+    except Exception as e:
+        print(f"Error: {e}")
+        exit(1)
 
 
 if __name__ == "__main__":
